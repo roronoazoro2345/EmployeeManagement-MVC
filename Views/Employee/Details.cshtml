@@ -1,0 +1,24 @@
+@model EMPLOYEEMANAGEMENT.Models.Employee
+
+<h2>Employee Details</h2>
+
+<hr />
+
+<dl class="row">
+    <dt class="col-sm-3">Name</dt>
+    <dd class="col-sm-9">@Model.Name</dd>
+
+    <dt class="col-sm-3">Email</dt>
+    <dd class="col-sm-9">@Model.EmailId</dd>
+
+    <dt class="col-sm-3">Address</dt>
+    <dd class="col-sm-9">@Model.Address</dd>
+
+    <dt class="col-sm-3">Mobile No</dt>
+    <dd class="col-sm-9">@Model.MobileNo</dd>
+</dl>
+
+<br />
+
+<a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Edit</a>
+<a asp-action="Index" class="btn btn-secondary">Back to List</a>
